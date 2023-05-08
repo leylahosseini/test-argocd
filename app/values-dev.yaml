@@ -1,5 +1,5 @@
-Name_DB: mongo
-Name_DB_SVC: mongo-dev
+NAME_DB: mongo
+NAME_DB_SVC: mongo-dev
 MONGO_USER: admin
 MONGO_PASS: admin123
 Replica: 1
