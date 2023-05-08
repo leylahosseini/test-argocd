@@ -3,4 +3,6 @@ Name_DB_SVC: mongo-dev
 MONGO_USER: admin
 MONGO_PASS: admin123
 Replica: 1
-PORT_frontend: 5000
+PORT_Frontend: 5000
+Name_Frontend: frontend
+Name_Backend: backend

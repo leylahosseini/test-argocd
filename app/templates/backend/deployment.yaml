@@ -1,23 +1,23 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ .Values.Name_DB }}
+  name: {{ .Values.Name_Backend}}
   labels:
-    app: mongo
+    app: backend
 spec:
   selector:
     matchLabels:
-      app: mongo
+      app: backend
   replicas: 1
   strategy:
     type: RollingUpdate
   template:
     metadata:
       labels:
-        app: mongo
+        app: backend
     spec:
       containers:
-       —name: mongo
-          image: mongo
+      - name: backend
+          image: nginx
           ports:
-           —containerPort: 27017
+          - containerPort: 80
