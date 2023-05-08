@@ -16,14 +16,14 @@ spec:
       labels:
         app: mongo
     spec:
-      containers:
-      - name: mongo
-          image: mongo
-          env:
-          - name: MONGO_INITDB_ROOT_USERNAME
-            value: {{ .Values.DB_USER }}
-          - name: MONGO_INITDB_ROOT_PASSWORD
-            value: {{ .Values.DB_PASS }}
-          ports:
-          - containerPort: 27017
+       containers:
+       - name: mongo
+         image: mongo
+         ports:
+         - containerPort: 27017
+       - env: 
+       - name: MONGO_INITDB_ROOT_USERNAME
+         value: {{ .Values.DB_USER }}
+       - name: MONGO_INITDB_ROOT_PASSWORD
+         value: {{ .Values.DB_PASS }}
 
