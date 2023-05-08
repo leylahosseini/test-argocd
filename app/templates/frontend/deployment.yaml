@@ -16,8 +16,8 @@ spec:
       labels:
         app: frontend
     spec:
-      containers:
-      - name: frontend
-        image: nodejs
-        ports:
+       containers:
+       - name: frontend
+         image: nodejs
+         ports:
           - containerPort: 3000
