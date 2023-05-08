@@ -16,8 +16,8 @@ spec:
       labels:
         app: backend
     spec:
-      containers:
-      - name: backend
-        image: nginx
-          ports:
+       containers:
+       - name: backend
+         image: nginx
+         ports:
           - containerPort: 80
