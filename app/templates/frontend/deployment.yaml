@@ -19,5 +19,5 @@ spec:
       containers:
       - name: frontend
         image: nodejs
-          ports:
+        ports:
           - containerPort: 3000
