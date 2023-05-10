@@ -1,3 +1,6 @@
+frontend_image: 
+backend_image:
+database_image:
 NAME_DB: mongo
 NAME_DB_SVC: mongo-dev
 MONGO_USER: admin
