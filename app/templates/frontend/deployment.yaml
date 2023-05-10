@@ -18,6 +18,6 @@ spec:
     spec:
        containers:
        - name: frontend
-         image: nodejs
+         image: frontend-image-1:1
          ports:
           - containerPort: 3000
