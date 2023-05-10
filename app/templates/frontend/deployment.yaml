@@ -18,6 +18,6 @@ spec:
     spec:
        containers:
        - name: frontend
-         image: frontend-image-1:1
+         image: {{ .Values.frontend_image }}
          ports:
           - containerPort: 3000
