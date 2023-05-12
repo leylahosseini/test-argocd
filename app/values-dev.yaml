@@ -8,4 +8,11 @@ MONGO_PASS: admin123
 Replica: 1
 PORT_Frontend: 5000
 Name_Frontend: frontend
+PORT: 5000
+DB_HOST: mongo
+DB_USERNAME: admin
+DB_PASSWORD: admin123
+DB_NAME: test-dev
+DB_PORT: 27017
+DATABASE_URL: mongodb://$DB_USERNAME:$DB_PASSWORD@$DB_HOST:$DB_PORT/$DB_NAME?authSource=admin
 Name_Backend: backend
