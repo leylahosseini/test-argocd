@@ -12,7 +12,7 @@ spec:
   strategy:
     type: RollingUpdate
   template:
-    metadata
+    metadata:
       labels:
         app: frontend
     spec:
