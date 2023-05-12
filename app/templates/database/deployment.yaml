@@ -21,9 +21,9 @@ spec:
         name: mongo
         env:
         - name: MONGO_INITDB_ROOT_USERNAME
-          value: {{ .Values.DB_USER }}
+          value: {{ .Values.DB_USERNAME }}
         - name: MONGO_INITDB_ROOT_PASSWORD
-          value: {{ .Values.DB_PASS }}
+          value: {{ .Values.DB_PASSWORD }}
         ports:
         - containerPort: 27017
           name: mongo
