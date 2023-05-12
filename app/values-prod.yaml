@@ -1,6 +1,6 @@
-frontend_image: enginedevops/frontend_prod:8c362801c69f255c867339b27c0c6da0a4de1b62
-backend_image: enginedevops/backend_prod:8c362801c69f255c867339b27c0c6da0a4de1b62
-#database_image: enginedevops/database_dev:8c362801c69f255c867339b27c0c6da0a4de1b62
+frontend_image: enginedevops/frontend_prod:a36c2231b4940909523dbe4a7a9408e42d1b546d
+backend_image: enginedevops/backend_prod:a36c2231b4940909523dbe4a7a9408e42d1b546d
+#database_image: enginedevops/database_dev:a36c2231b4940909523dbe4a7a9408e42d1b546d
 NAME_DB_DEP: mongo-prod
 NAME_DB_SVC: mongo-prod      
 #MONGO_USER: admin
