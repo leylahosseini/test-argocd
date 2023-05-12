@@ -19,4 +19,4 @@ spec:
           service:
             name: {{ .Values.Name_Frontend }}
             port:
-              number: "{{ .Values.PORT }}"
+              number: {{ .Values.PORT }}
