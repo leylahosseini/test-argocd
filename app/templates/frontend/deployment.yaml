@@ -21,7 +21,7 @@ spec:
          image: {{ .Values.frontend_image }}
          env:
          - name: PORT
-           value: {{ .Values.PORT }}
+           value: "{{ .Values.PORT }}"
          - name: DB_HOST
            value: {{ .Values.DB_HOST }}
          - name: DB_USERNAME
@@ -31,8 +31,8 @@ spec:
          - name: DB_NAME
            value: {{ .Values.DB_NAME }}
          - name: DB_PORT
-           value: {{ .Values.DB_PORT }}
+           value: "{{ .Values.DB_PORT }}"
          - name: DATABASE_URL
            value: {{ .Values.DATABASE_URL }}
-         ports:
-          - containerPort: 3000
+#         ports:
+#          - containerPort: 3000
