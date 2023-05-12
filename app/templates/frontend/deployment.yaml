@@ -12,12 +12,27 @@ spec:
   strategy:
     type: RollingUpdate
   template:
-    metadata:
+    metadata:a
       labels:
         app: frontend
     spec:
        containers:
        - name: frontend
          image: {{ .Values.frontend_image }}
-         ports:
-          - containerPort: 3000
+         env:
+         - name: PORT
+           value: {{ .Values.PORT }}
+         - name: DB_HOST
+           value: {{ .Values.DB_HOST }}
+         - name: DB_USERNAME
+           value: {{ .Values.DB_USERNAME }}
+         - name: DB_PASSWORD
+           value: {{ .Values.DB_PASSWORD }}
+         - name: DB_NAME
+           value: {{ .Values.DB_NAME }}
+         - name: DB_PORT
+           value: {{ .Values.DB_PORT }}
+         - name: DATABASE_URL
+           value: {{ .Values.DATABASE_URL }}
+#         ports:
+#          - containerPort: 3000
