@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ .Values.Name_Frontend }}
+  name: {{ .Values.FRONTEND_NAME }}
 spec:
   selector:
     app: frontend
   ports:
     - protocol: TCP
-      port: {{ .Values.PORT }}
+      port: {{ .Values.FRONTEND_PORT }}
 #      targetPort: 3000
   type: ClusterIP
 
