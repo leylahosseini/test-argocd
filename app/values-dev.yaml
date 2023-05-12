@@ -9,7 +9,7 @@ Replica: 1
 #PORT_Frontend: 5000
 FRONTEND_NAME: frontend
 FRONTEND_PORT: 5000
-FRONTEND_DOMAIN: fronetend.enginedevops.ir
+FRONTEND_DOMAIN: frontend.enginedevops.ir
 DB_HOST: mongo-dev
 DB_USERNAME: admin
 DB_PASSWORD: admin123
