@@ -14,5 +14,5 @@ DB_USERNAME: admin
 DB_PASSWORD: admin123
 DB_NAME: fake-store
 DB_PORT: 27017
-DATABASE_URL: mongodb://$DB_USERNAME:$DB_PASSWORD@$DB_HOST:$DB_PORT/$DB_NAME?authSource=admin
+DATABASE_URL: mongodb://admin:admin123@mongo-dev:27017/fake-store?authSource=admin
 Name_Backend: backend
