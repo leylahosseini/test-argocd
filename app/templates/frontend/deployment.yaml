@@ -34,5 +34,5 @@ spec:
            value: {{ .Values.DB_PORT }}
          - name: DATABASE_URL
            value: {{ .Values.DATABASE_URL }}
-#         ports:
-#          - containerPort: 3000
+         ports:
+          - containerPort: 3000
