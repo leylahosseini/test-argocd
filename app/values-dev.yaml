@@ -16,3 +16,4 @@ DB_NAME: fake-store
 DB_PORT: 27017
 DATABASE_URL: mongodb://admin:admin123@mongo-dev:27017/fake-store?authSource=admin
 Name_Backend: backend
+FRONTEND_DOMAIN: fronetend.enginedevops.ir
