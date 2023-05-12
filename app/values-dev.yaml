@@ -1,8 +1,8 @@
 frontend_image: enginedevops/frontend_dev:8c362801c69f255c867339b27c0c6da0a4de1b62
 backend_image: enginedevops/backend_dev:8c362801c69f255c867339b27c0c6da0a4de1b62
 #database_image: enginedevops/database_dev:8c362801c69f255c867339b27c0c6da0a4de1b62
-NAME_DB: test-dev
-NAME_DB_SVC: mongo-dev
+NAME_DB_DEP: mongo-dev
+NAME_DB_SVC: mongo-dev       
 MONGO_USER: admin
 MONGO_PASS: admin123
 Replica: 1
@@ -12,7 +12,7 @@ PORT: 5000
 DB_HOST: mongo-dev
 DB_USERNAME: admin
 DB_PASSWORD: admin123
-DB_NAME: test-dev
+DB_NAME: fake-store
 DB_PORT: 27017
 DATABASE_URL: mongodb://$DB_USERNAME:$DB_PASSWORD@$DB_HOST:$DB_PORT/$DB_NAME?authSource=admin
 Name_Backend: backend
