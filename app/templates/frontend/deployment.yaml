@@ -1,6 +1,5 @@
 apiVersion: apps/v1
 kind: Deployment
-##
 metadata:
   name: {{ .Values.Name_Frontend }}
   labels:
