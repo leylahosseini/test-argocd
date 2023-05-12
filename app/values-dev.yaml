@@ -1,5 +1,5 @@
-frontend_image: enginedevops/frontend-dev:441a8df46c0ef35114c1c78ef69bc2b84d67b825
-backend_image:  enginedevops/backend-dev:441a8df46c0ef35114c1c78ef69bc2b84d67b825
+frontend_image: ghcr.io/leylahosseini/frontend-dev:441a8df46c0ef35114c1c78ef69bc2b84d67b825
+backend_image:  ghcr.io/leylahosseini/backend-dev:441a8df46c0ef35114c1c78ef69bc2b84d67b825
 #database_image: enginedevops/database-dev:441a8df46c0ef35114c1c78ef69bc2b84d67b825
 NAME_DB: mongo
 NAME_DB_SVC: mongo-dev
