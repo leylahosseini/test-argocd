@@ -2,7 +2,7 @@
 apiVersion: apps/v1 
 kind: Deployment
 metadata:
-  name: {{ .Values.NAME_DB }}
+  name: {{ .Values.NAME_DB_DEP }}
   labels:
     app: mongo
 spec:
