@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ .Values.Name_Frontend }}
+  name: {{ .Values.FRONTEND_NAME }}
   labels:
     app: frontend
 spec:
@@ -21,7 +21,7 @@ spec:
          image: {{ .Values.frontend_image }}
          env:
          - name: PORT
-           value: "{{ .Values.PORT }}"
+           value: "{{ .Values.FRONTEND_PORT }}"
          - name: DB_HOST
            value: {{ .Values.DB_HOST }}
          - name: DB_USERNAME
